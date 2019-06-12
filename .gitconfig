@@ -1,0 +1,9 @@
+[user]
+	email = darryl.forbes@u.northwestern.edu
+	name = Darryl Forbes
+	username = darrylforbes
+[core]
+	editor = vim
+[color]
+	ui = auto
+

@@ -1,0 +1,13 @@
+set editing-mode vi
+
+$if mode=vi
+    set keymap vi-insert
+    "kj": vi-movement-mode
+$endif
+
+# Make Tab autocomplete case-insensitive
+set completion-ignore-case on
+
+# List autocomplete matches if ambiguous
+set show-all-if-ambiguous on
+
