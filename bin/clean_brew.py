@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import subprocess
 
@@ -7,7 +7,7 @@ leaves = subprocess.check_output(['brew', 'leaves'])
 for leaf in leaves.splitlines():
     print(leaf.decode('UTF-8'))
 
-print("")
+print()
 
 deps = subprocess.check_output(['brew', 'deps', '--installed'])
 
