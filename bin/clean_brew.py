@@ -2,16 +2,31 @@
 
 import subprocess
 
-leaves = subprocess.check_output(['brew', 'leaves'])
+leaves = set()
+for leaf in subprocess.check_output(['brew', 'leaves']).splitlines():
+    leaves.add(leaf.decode('UTF-8'))
 
-for leaf in leaves.splitlines():
-    print(leaf.decode('UTF-8'))
+deps = set()
+for line in subprocess.check_output(['brew', 'deps', '--installed']).splitlines():
+    split_line = line.decode('UTF-8').split(' ')
+    for i in range(1, len(split_line)):
+        if split_line[i] != '':
+            deps.add(split_line[i])
 
-print()
+packages = set()
+for line in subprocess.check_output(['brew', 'list']).splitlines():
+    packages.add(line.decode('UTF-8'))
+packages.add("Testing scrpt")
 
-deps = subprocess.check_output(['brew', 'deps', '--installed'])
+unused = set()
+for p in packages:
+    if p not in deps | leaves:
+        unused.add(p)
 
-for dep in deps.splitlines():
-    print(dep.decode('UTF-8'))
+if unused:
+    print("Unused dependencies:")
+    for p in unused:
+        print(p)
+else:
+    print("No unused dependencies found")
 
-# Compare dependencies of leaves with installed packages to find orphans
