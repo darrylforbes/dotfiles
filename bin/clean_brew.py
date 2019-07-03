@@ -16,7 +16,7 @@ for line in subprocess.check_output(['brew', 'deps', '--installed']).splitlines(
 packages = set()
 for line in subprocess.check_output(['brew', 'list']).splitlines():
     packages.add(line.decode('UTF-8'))
-packages.add("Testing scrpt")
+packages.add("Test package")
 
 unused = set()
 for p in packages:
@@ -24,9 +24,16 @@ for p in packages:
         unused.add(p)
 
 if unused:
-    print("Unused dependencies:")
+    print("\nUnused dependencies:")
     for p in unused:
         print(p)
+
+    delete = input("\nWould you like to uninstall these dependencies (y/n): ")
+    delete = delete.lower()
+
+    if delete == 'y':
+        print("Packages have been deleted")
+
 else:
-    print("No unused dependencies found")
+    print("\nNo unused dependencies found")
 
