@@ -160,3 +160,7 @@ let mapleader = "\<Space>"
 nnoremap <leader>v :vs<Space>
 nnoremap <leader>s :sp<Space>
 
+" Swap ' (single quote) and ` (backtick)
+noremap ' `
+noremap ` '
+
