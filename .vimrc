@@ -76,12 +76,6 @@ set wildmenu
 " Always show current position
 set ruler
 
-" Turn on hybrid line numbers
-" set number relativenumber
-
-" Set height of the command bar
-" set cmdheight=2
-
 " Configure backspace so it acts as it should act
 set backspace=eol,start,indent
 " set which wrap+=<,>,h,l
