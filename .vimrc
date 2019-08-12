@@ -54,6 +54,9 @@ Plug 'christoomey/vim-tmux-navigator'
 
 " ale
 Plug 'dense-analysis/ale'
+let b:ale_linters = {'python': ['pylint']}
+let g:ale_python_auto_pipenv = 1
+let g:ale_sign_column_always = 1
 
 " Plugins end
 call plug#end()
