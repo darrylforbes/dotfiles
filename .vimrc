@@ -9,6 +9,7 @@
 "   vim-airline - https://github.com/vim-airline/vim-airline
 "   edkolev - https://github.com/tmuxline.vim
 "   christoomey - https://github.com/vim-tmux-navigator
+"   dense-analysis - https://github.com/ale
 "
 " Sections:
 "   vim-plug
@@ -51,8 +52,14 @@ let g:airline#extensions#tmuxline#enabled = 0
 " vim-tmux-navigator
 Plug 'christoomey/vim-tmux-navigator'
 
+" ale
+Plug 'dense-analysis/ale'
+
 " Plugins end
 call plug#end()
+
+" Make sure to run source ~&/.vimrc then PlugInstall to install new plugins
+" Occassionally run PlugUpdate and PlugUpgrade to update and upgrade plugins
 
 
 
@@ -139,6 +146,18 @@ set autoindent
 set splitbelow
 set splitright
 
+" Netrw settings
+let g:netrw_altv = 1
+" Remove banner
+let g:netrw_banner = 0
+" Set default viewtype to tree
+let g:netrw_liststyle = 3
+" Set window size
+let g:netrw_winsize = 25
+augroup NetrwRemap
+    autocmd FileType netrw nnoremap <buffer> <C-l> :wincmd l<cr>
+augroup END
+
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
@@ -151,7 +170,7 @@ map 0 ^
 inoremap kj <esc>
 
 " Remap escape in command mode to kj
-cnoremap kj <C-C>
+cnoremap kj <C-c>
 
 " Remap leader to Space
 let mapleader = "\<Space>"
