@@ -1,4 +1,5 @@
-plugged/
 *.swp
+.vim/plugged/*
+.vim/!plugged/tmuxline.vim/tmuxline_snapshot
 .vim/.netrwhist
 
