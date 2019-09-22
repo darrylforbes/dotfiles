@@ -14,3 +14,6 @@ for x in /Users/darryl/Library/Python/3.7/bin; do
     esac
 done
 
+# Sets pipenv to store virtual environments inside project directory
+export PIPENV_VENV_IN_PROJECT=1
+
