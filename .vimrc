@@ -39,6 +39,7 @@ call plug#begin('~/.vim/plugged')
 " gruvbox
 Plug 'morhetz/gruvbox'
 let g:gruvbox_contrast_dark = 'medium'
+set bg=dark
 
 Plug 'vim-airline/vim-airline'
 let g:airline_theme = 'gruvbox'
