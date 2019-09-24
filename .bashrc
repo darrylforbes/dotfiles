@@ -17,3 +17,6 @@ done
 # Sets pipenv to store virtual environments inside project directory
 export PIPENV_VENV_IN_PROJECT=1
 
+# Forces tmux to assume terminal supports 256 colors
+export TERM=screen-256color
+
