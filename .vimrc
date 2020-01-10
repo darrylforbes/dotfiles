@@ -55,7 +55,7 @@ Plug 'christoomey/vim-tmux-navigator'
 
 " ale
 Plug 'dense-analysis/ale'
-let b:ale_linters = {'python': ['pylint']}
+let b:ale_linters = {'python': ['pylint'], 'javascript': ['eslint']}
 let g:ale_python_auto_pipenv = 1
 let g:ale_sign_column_always = 1
 
@@ -139,6 +139,9 @@ set smarttab
 " 1 tab == 4 spaces
 set shiftwidth=4
 set softtabstop=4
+
+" 1 tab == 2 spaces for javascript
+autocmd FileType javascript setlocal shiftwidth=2 softtabstop=2
 
 " Set auto indent
 set autoindent
