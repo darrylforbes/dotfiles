@@ -141,7 +141,7 @@ set shiftwidth=4
 set softtabstop=4
 
 " 1 tab == 2 spaces for javascript
-autocmd FileType javascript setlocal shiftwidth=2 softtabstop=2
+autocmd FileType javascript,css setlocal shiftwidth=2 softtabstop=2
 
 " Set auto indent
 set autoindent
