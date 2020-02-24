@@ -11,6 +11,7 @@
 "   christoomey - https://github.com/christoomey/vim-tmux-navigator
 "   dense-analysis - https://github.com/dense-analysis/ale
 "   vim-commentary - https://github.com/tpope/vim-commentary
+"   vim-surround - https://github.com/tpope/vim-surround
 "
 " Sections:
 "   vim-plug
@@ -60,6 +61,10 @@ let g:ale_sign_column_always = 1
 
 " vim-commentary
 Plug 'tpope/vim-commentary'
+
+" vim-surround
+Plug 'tpope/vim-surround'
+
 " Plugins end
 call plug#end()
 
