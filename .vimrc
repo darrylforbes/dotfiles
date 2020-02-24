@@ -7,9 +7,9 @@
 "   junegunn - https://github.com/junegunn/vim-plug
 "   morhetz - https://github.com/morhetz/gruvbox
 "   vim-airline - https://github.com/vim-airline/vim-airline
-"   edkolev - https://github.com/tmuxline.vim
-"   christoomey - https://github.com/vim-tmux-navigator
-"   dense-analysis - https://github.com/ale
+"   edkolev - https://github.com/edkolev/tmuxline.vim
+"   christoomey - https://github.com/christoomey/vim-tmux-navigator
+"   dense-analysis - https://github.com/dense-analysis/ale
 "
 " Sections:
 "   vim-plug
