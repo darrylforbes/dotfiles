@@ -102,13 +102,14 @@ filetype plugin on
 filetype indent on
 
 " Set 7 lines to the cursor - when moving vertically using j/k
-set so=7
+set scrolloff=7
 
 " Turn on the Wild menu
 set wildmenu
+set wildmode=longest:list
 
-" Always show current position
-set ruler
+set number
+set relativenumber
 
 " Configure backspace so it acts as it should act
 set backspace=eol,start,indent
@@ -212,4 +213,3 @@ nnoremap <leader>s :sp<Space>
 " Swap ' (single quote) and ` (backtick)
 noremap ' `
 noremap ` '
-
