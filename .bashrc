@@ -20,3 +20,6 @@ export PIPENV_VENV_IN_PROJECT=1
 # Forces tmux to assume terminal supports 256 colors
 export TERM=screen-256color
 
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
