@@ -57,6 +57,23 @@ Plug 'christoomey/vim-tmux-navigator'
 
 " ale
 Plug 'dense-analysis/ale'
+let g:ale_linters = {
+\   'javascript': ['eslint'],
+\   'python': ['pylint', 'flake8']
+\}
+let g:ale_fixers = {
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+\   'css': ['prettier'],
+\   'html': ['prettier'],
+\   'javascript': ['prettier', 'eslint'],
+\   'python': ['black'],
+\   'yaml': ['prettier']
+\}
+let g:ale_lint_on_enter = 1
+let g:ale_lint_on_save = 1
+let g:ale_lint_on_text_changed = 1
+let g:ale_fix_on_save = 1
+let g:ale_completion_enabled = 1
 let g:ale_sign_column_always = 1
 
 " vim-commentary
