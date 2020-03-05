@@ -12,6 +12,7 @@
 "   dense-analysis - https://github.com/dense-analysis/ale
 "   vim-commentary - https://github.com/tpope/vim-commentary
 "   vim-surround - https://github.com/tpope/vim-surround
+"   vim-polyglot - https://github.com/sheerun/vim-polyglot
 "
 " Sections:
 "   vim-plug
@@ -81,6 +82,9 @@ Plug 'tpope/vim-commentary'
 
 " vim-surround
 Plug 'tpope/vim-surround'
+
+" vim-polyglot
+Plug 'sheerun/vim-polyglot'
 
 " Plugins end
 call plug#end()
