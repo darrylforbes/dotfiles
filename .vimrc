@@ -25,7 +25,7 @@
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
-"   vim-plug
+" vim-plug
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
 " If vim-plug is not installed then installs it
@@ -184,6 +184,8 @@ let g:netrw_banner = 0
 let g:netrw_liststyle = 3
 " Set window size
 let g:netrw_winsize = 25
+
+" Allows moving back to main split
 augroup NetrwRemap
     autocmd FileType netrw nnoremap <buffer> <C-l> :wincmd l<cr>
 augroup END
