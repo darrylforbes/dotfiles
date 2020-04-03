@@ -83,6 +83,9 @@ Plug 'sheerun/vim-polyglot'
 
 " coc.nvim
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+let g:coc_global_extensions = ['coc-css', 'coc-eslint', 'coc-html', 'coc-json',
+\ 'coc-lists', 'coc-pairs', 'coc-prettier', 'coc-python', 'coc-tsserver',
+\ 'coc-yaml']
 
 " Plugins end
 call plug#end()
