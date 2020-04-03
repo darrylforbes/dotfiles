@@ -14,11 +14,23 @@ for x in /Users/darryl/Library/Python/3.7/bin; do
     esac
 done
 
+# Adds $HOME/.local/bin to path if not already there
+for x in $HOME/.local/bin; do
+    case ":$PATH:" in
+        *":$x:"*) :;;
+        *) export PATH="$PATH:$x";;
+    esac
+done
+
 # Sets pipenv to store virtual environments inside project directory
 export PIPENV_VENV_IN_PROJECT=1
 
 # Forces tmux to assume terminal supports 256 colors
 export TERM=screen-256color
+
+# Pyenv settings
+export PYENV_ROOT=$HOME/.pyenv
+export PATH=$PYENV_ROOT/bin:$PATH
 
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
