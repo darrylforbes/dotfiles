@@ -15,3 +15,5 @@
 	prompt = false
 [mergetool]
 	keepBackup = false
+[credential]
+	helper = store
