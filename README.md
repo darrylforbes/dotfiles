@@ -22,14 +22,13 @@ Run bin/link_tmuxline_snapshot.sh
 - nodejs (for coc)
 - npm (nodejs didn't come with npm)
 - tmux
-- docker
-- docker compose
+- docker (look at docker docs for instructions)
+- docker compose (look at docker docs for instructions)
 
 Python Stuff
 - pip3 (sudo apt install python3-pip)
     - pipenv (python3 -m pip install --user pipenv)
-    Within project pipenv
-    - jedi
-    - pylint
-    - black
+        - jedi
+        - pylint
+        - black
 - pyenv (installation instructions - github.com/pyenv/pyenv#installation)
