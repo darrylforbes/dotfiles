@@ -265,9 +265,14 @@ inoremap <silent><expr> <c-space> coc#refresh()
 " position. Coc only does snippet and additional edit on confirm.
 if has('patch-8.1.1068')
   " Use `complete_info` if your (Neo)Vim version supports it.
-  inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
+  inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>\<CR>" : "\<C-g>u\<CR>"
 else
-  inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+  " inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+  inoremap <expr> <cr> pumvisible() && !empty(v:completed_item) ? "\<C-y>\<CR>" : "\<C-g>u\<CR>"
+    " inoremap <cr> <C-y>
+  " else
+    " inoremap <cr> <C-g>u<CR>
+  " endif
 endif
 
 " Use `[g` and `]g` to navigate diagnostics
