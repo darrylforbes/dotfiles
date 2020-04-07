@@ -22,8 +22,8 @@ for x in $HOME/.local/bin; do
     esac
 done
 
-# Sets pipenv to store virtual environments inside project directory
-export PIPENV_VENV_IN_PROJECT=1
+# Tells pipenv where to store virtual environments
+export WORKON_HOME=$HOME/.virtualenvs
 
 # Forces tmux to assume terminal supports 256 colors
 export TERM=screen-256color
