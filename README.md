@@ -28,7 +28,7 @@ Run bin/link_tmuxline_snapshot.sh
 Python Stuff
 - pip3 (sudo apt install python3-pip)
     - pipenv (python3 -m pip install --user pipenv)
-        - jedi
-        - pylint
-        - black
+        - install python dev venv with pipfile in bin
+        - contains jedi, pylint, and black
+        - whenever editing .py files, set interpreter to venv python
 - pyenv (installation instructions - github.com/pyenv/pyenv#installation)
