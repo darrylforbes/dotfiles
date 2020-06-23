@@ -45,6 +45,7 @@ Plug 'morhetz/gruvbox'
 let g:gruvbox_contrast_dark = 'medium'
 set bg=dark
 
+" airline
 Plug 'vim-airline/vim-airline'
 let g:airline_theme = 'gruvbox'
 let g:airline#extensions#tabline#enabled = 1
