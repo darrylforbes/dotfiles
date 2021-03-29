@@ -19,8 +19,6 @@ Run bin/link_tmuxline_snapshot.sh
 
 - vim
 - git (to clone dotfiles)
-- nodejs (for coc)
-- npm (nodejs didn't come with npm)
 - tmux
 - docker (look at docker docs for instructions)
 - docker compose (look at docker docs for instructions)
