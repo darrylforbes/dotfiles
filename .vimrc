@@ -61,6 +61,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'dense-analysis/ale'
 let g:airline#extensions#ale#enabled = 1
 let g:ale_linters = {
+\   'python': ['pylint', 'flake8', 'pyls'],
 \}
 let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
