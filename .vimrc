@@ -22,7 +22,6 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
 
-
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " vim-plug
 """"""""""""""""""""""""""""""""""""""""""""""""""
@@ -88,7 +87,6 @@ call plug#end()
 
 " Make sure to run source ~&/.vimrc then PlugInstall to install new plugins
 " Occassionally run PlugUpdate and PlugUpgrade to update and upgrade plugins
-
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
@@ -191,7 +189,6 @@ augroup END
 
 " Set tab to work like <C-n> in autocomplete window
 " inoremap <silent><expr> <Tab> pumvisible() ? "\<C-n>" : "\<TAB>"
-
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
