@@ -31,3 +31,7 @@ Python Stuff
         - install python dev venv with pipfile in bin (python -m pipenv install)
         - contains jedi, pylint, and black
         - whenever editing .py files, set interpreter to venv python
+
+Mac Notes
+- Use homebrew
+    - Can cleanup orphaned dependencies with brew autoremove
