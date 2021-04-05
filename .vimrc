@@ -108,6 +108,7 @@ set scrolloff=7
 set wildmenu
 set wildmode=longest:list
 
+" Set number column settings
 set number
 set relativenumber
 
