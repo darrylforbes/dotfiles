@@ -112,6 +112,9 @@ set wildmode=longest:list
 set number
 set relativenumber
 
+" Set sign column settings
+set signcolumn=yes
+
 " Configure backspace so it acts as it should act
 set backspace=eol,start,indent
 " set which wrap+=<,>,h,l
