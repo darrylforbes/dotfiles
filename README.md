@@ -39,3 +39,4 @@ Javascript Stuff
 Mac Notes
 - Use homebrew
     - Can cleanup orphaned dependencies with brew autoremove
+    - For using older versions use brew link/unlink
